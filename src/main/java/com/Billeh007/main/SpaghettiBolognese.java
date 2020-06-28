@@ -1,5 +1,6 @@
 package com.Billeh007.main;
 
+import com.Billeh007.helpers.RecipeHelper;
 import com.Billeh007.registry.ItemRegistry;
 
 import cpw.mods.fml.common.Mod;
@@ -25,6 +26,7 @@ public class SpaghettiBolognese
     public void init(FMLInitializationEvent event)
     {
     	ItemRegistry.init();
+    	RecipeHelper.init();
     }
     
     @EventHandler
