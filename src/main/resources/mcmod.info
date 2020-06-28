@@ -1,0 +1,16 @@
+[
+{
+  "modid": "spaghettibolognesereborn",
+  "name": "Spaghetti Bolognese",
+  "description": "A rewrite of the legendary Spaghetti Bolognese mod, along with the other mods from the mythical CR43Z33M0NK3Y.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["CR43Z33M0NK3Y", "Billeh007"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
