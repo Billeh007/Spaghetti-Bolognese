@@ -4,6 +4,9 @@ import com.Billeh007.helpers.RegisterHelper;
 import com.Billeh007.items.ModFood;
 import com.Billeh007.items.ModItem;
 
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
+
 public class ItemRegistry
 {
 	//standard items
@@ -14,6 +17,9 @@ public class ItemRegistry
 	public static ModFood itemMeatball = new ModFood("meatball", 2, 0.5f, true);
 	public static ModFood itemCookedPasta = new ModFood("cookedPasta", 1, 0.1f);
 	public static ModFood itemSpaghettiBolognese = new ModFood("spaghettiBolognese", 4, 1.5f);
+	
+	//potion food
+	public static ModFood itemDogFood = new ModFood("dogFood", 0, 0f, true, new PotionEffect(Potion.hunger.id, 200, 1));
 	
 	public static void preInit()
 	{
@@ -30,5 +36,8 @@ public class ItemRegistry
 		RegisterHelper.quickReg(itemMeatball);
 		RegisterHelper.quickReg(itemCookedPasta);
 		RegisterHelper.quickReg(itemSpaghettiBolognese);
+		
+		//register potion foods
+		RegisterHelper.quickReg(itemDogFood);
 	}
 }

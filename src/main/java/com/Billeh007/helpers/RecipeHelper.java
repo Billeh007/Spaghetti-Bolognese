@@ -2,6 +2,7 @@ package com.Billeh007.helpers;
 
 import com.Billeh007.registry.ItemRegistry;
 
+import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
@@ -21,5 +22,13 @@ public class RecipeHelper
 		
 		//smelting
 		GameRegistry.addSmelting(ItemRegistry.itemPasta, new ItemStack(ItemRegistry.itemCookedPasta), 0.2F);
+	}
+	
+	public static void postInit()
+	{
+		if (Loader.isModLoaded(modname))
+		{
+			GameRegistry.addRecipe(Railcraft.rail);
+		}
 	}
 }
