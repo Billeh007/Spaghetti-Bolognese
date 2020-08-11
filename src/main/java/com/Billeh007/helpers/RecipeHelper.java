@@ -26,9 +26,9 @@ public class RecipeHelper
 	
 	public static void postInit()
 	{
-		if (Loader.isModLoaded(modname))
+		//if (Loader.isModLoaded(modname))
 		{
-			GameRegistry.addRecipe(Railcraft.rail);
+			//GameRegistry.addRecipe(Railcraft.rail);
 		}
 	}
 }
